@@ -1,0 +1,12 @@
+{
+  "name": "material-share-api",
+  "version": "1.0.0",
+  "description": "*** # Material-Share-API --- *API de desenvolvimento com CRUD do projeto Material Share* ---  *A Material Share é uma __ONG__, com o principal objetivo de acabar com o Disperdicio de Materiais de Construção* Desenvolvido por Alunos do ITB Belval  ***",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
