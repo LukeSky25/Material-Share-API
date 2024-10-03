@@ -4,9 +4,17 @@
   "description": "*** # Material-Share-API --- *API de desenvolvimento com CRUD do projeto Material Share* ---  *A Material Share é uma __ONG__, com o principal objetivo de acabar com o Disperdicio de Materiais de Construção* Desenvolvido por Alunos do ITB Belval  ***",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.11.1",
+    "eslint": "^9.11.1",
+    "globals": "^15.10.0",
+    "nodemon": "^3.1.7",
+    "sucrase": "^3.35.0"
+  }
 }
