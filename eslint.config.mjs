@@ -8,7 +8,8 @@ export default [
   {
     rules: {
       "semi": "error",
-      "class-methods-use-this": "off"
+      "class-methods-use-this": "off",
+      "no-unused-vars": "off"
     }
   }
 ];

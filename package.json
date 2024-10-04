@@ -15,6 +15,16 @@
     "eslint": "^9.11.1",
     "globals": "^15.10.0",
     "nodemon": "^3.1.7",
+    "sequelize": "^6.37.3",
+    "sequelize-cli": "^6.6.2",
     "sucrase": "^3.35.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "mysql2": "^3.11.3",
+    "validar-cpf": "^3.1.1"
   }
 }
