@@ -8,6 +8,7 @@ import express from "express";
 
 import home from './src/routes/home';
 import usuario from './src/routes/usuario';
+import token from './src/routes/token';
 
 class App {
   constructor() {
@@ -24,6 +25,7 @@ class App {
   routes() {
     this.app.use('/', home);
     this.app.use('/user/', usuario);
+    this.app.use('/tokens/', token);
   }
 
 }

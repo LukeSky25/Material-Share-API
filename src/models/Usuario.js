@@ -171,9 +171,15 @@ export default class Usuario extends Model {
     });
 
     this.addHook('beforeSave', async user => {
-      user.senha_hash = await bcryptjs.hash(user.senha_hash, 8);
+      if(user.senha) {
+        user.senha_hash = await bcryptjs.hash(user.senha, 8);
+      }
     });
 
     return this;
+  }
+
+  senhaValida(senha) {
+    return bcryptjs.compare(senha, this.senha_hash);
   }
 }
