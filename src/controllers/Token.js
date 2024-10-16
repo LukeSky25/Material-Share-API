@@ -32,7 +32,20 @@ class Token {
       expiresIn: process.env.TOKEN_EXPIRATION,
     });
 
-    return res.json({token});
+    return res.json({
+      token,
+      data: {
+        id,
+        nome: user.nome,
+        email,
+        cpf: user.cpf,
+        dataNascimento: user.data_nascimento,
+        telefone: user.telefone,
+        cep: user.cep,
+        complemento: user.complemento,
+        numero: user.numero,
+       }
+      });
   }
 
 }

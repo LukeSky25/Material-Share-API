@@ -79,8 +79,6 @@ class User {
         data_nascimento,
         telefone,
         cep,
-        complemento,
-        numero,
         status_cadastro
       } = novoUsuario;
       res.json({
@@ -92,15 +90,13 @@ class User {
         data_nascimento,
         telefone,
         cep,
-        complemento,
-        numero,
         status_cadastro
       });
 
     } catch(e) {
-      res.status(400).json({
-        errors: e.errors.map(err => err.message)
-      });
+      const errorMessages = Array.isArray(e.errors) ? e.errors.map(err => err.message) : [e.message || 'Erro desconhecido'];
+
+        return res.status(400).json({ errors: errorMessages });
     }
 
   }

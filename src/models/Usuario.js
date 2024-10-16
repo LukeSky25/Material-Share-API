@@ -89,7 +89,7 @@ export default class Usuario extends Model {
         defaultValue: '',
         validate: {
           isDate: {
-            msg: 'Data de nascimento inválida'
+            msg: 'Data de nascimento inválida',
           }
         }
       },
@@ -135,10 +135,9 @@ export default class Usuario extends Model {
       },
       numero: {
         type: Sequelize.STRING(10),
-        defaultValue: '',
         validate: {
           isInt: {
-            msg: 'Número inválido'
+            msg: 'Número inválido',
           },
           len: {
             args: [0, 100],
